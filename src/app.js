@@ -1,7 +1,9 @@
-if (process.env.USER) require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+
+const knex = require("./db/connection");
 
 
 const moviesRouter = require("./movies/movies.router");
