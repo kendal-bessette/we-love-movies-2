@@ -1,7 +1,6 @@
 const service = require("./movies.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 const knex = require("knex");
-const res = require("express/lib/response");
 
 async function list(req, res, next) {
     const data = await service.list(req.query.is_showing); 

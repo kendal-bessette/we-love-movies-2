@@ -1,7 +1,6 @@
 const service = require("./reviews.service"); 
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 const knex = require("knex");
-const res = require("express/lib/response");
 
 
 async function reviewExists(req, res, next) {
